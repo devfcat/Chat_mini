@@ -558,37 +558,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_Padding: {x: -8, y: -5, z: -8, w: -5}
   m_Softness: {x: 0, y: 0}
---- !u!1 &645349375
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 645349376}
-  m_Layer: 0
-  m_Name: GameManager
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &645349376
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 645349375}
-  serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 0}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &806572407
 GameObject:
   m_ObjectHideFlags: 0
@@ -775,6 +744,54 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 832879295}
   m_CullTransparentMesh: 1
+--- !u!1 &1053292152
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1053292154}
+  - component: {fileID: 1053292153}
+  m_Layer: 0
+  m_Name: NetworkManager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &1053292153
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1053292152}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 944d3090d1a111947831183c1f7f3fa1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  WWW_URL: 
+  WWW_REQ_TIMEOUT: 0
+  IsOnNetwork: 0
+  API_KEY: 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
+--- !u!4 &1053292154
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1053292152}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1081230184
 GameObject:
   m_ObjectHideFlags: 0
@@ -1300,6 +1317,7 @@ MonoBehaviour:
   inputField: {fileID: 1864586421}
   btn_Send: {fileID: 1082077952}
   message_record: []
+  pyFolderPath: 
   prompts: "\uB108\uB294 \uD55C\uAD6D\uC5B4\uB85C\uB9CC \uB9D0\uD558\uB294 \uC720\uB2A5\uD55C
     \uBE44\uC11C\uC57C.\uD56D\uC0C1 \uBC18\uB9D0\uB85C \uB2F5\uBCC0\uD574\uC57C \uD574.
     \uC0AC\uC6A9\uC790\uC758 \uC131\uACA9\uC5D0 \uB300\uD574 \uC124\uBA85\uD558\uB294
@@ -1701,4 +1719,4 @@ SceneRoots:
   - {fileID: 1209141250}
   - {fileID: 74230239}
   - {fileID: 1374365249}
-  - {fileID: 645349376}
+  - {fileID: 1053292154}
