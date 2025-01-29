@@ -1,8 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Text;
-using Newtonsoft.Json;
-using static OpenAI_API.Audio.TextToSpeechRequest;
+﻿using Newtonsoft.Json;
 
 namespace OpenAI_API.Audio
 {

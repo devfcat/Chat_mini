@@ -1,8 +1,5 @@
 ﻿using Newtonsoft.Json;
-using OpenAI_API.Models;
 using System;
-using System.Collections.Generic;
-using System.Text;
 
 namespace OpenAI_API.Images
 {

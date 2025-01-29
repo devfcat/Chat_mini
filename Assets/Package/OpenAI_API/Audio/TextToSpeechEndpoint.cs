@@ -1,12 +1,7 @@
-﻿using System;
-using System.Collections.Generic;
-using System.IO;
+﻿using System.IO;
 using System.Net.Http;
-using System.Text;
 using System.Threading.Tasks;
-using OpenAI_API.Chat;
 using OpenAI_API.Models;
-using static System.Net.WebRequestMethods;
 
 namespace OpenAI_API.Audio
 {

@@ -2,9 +2,6 @@
 using Newtonsoft.Json.Linq;
 using System;
 using System.Collections.Generic;
-using System.IO;
-using System.Text;
-using static System.Net.WebRequestMethods;
 
 namespace OpenAI_API.Chat
 {

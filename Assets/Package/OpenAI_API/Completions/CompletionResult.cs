@@ -1,5 +1,4 @@
 ﻿using Newtonsoft.Json;
-using OpenAI_API.Embedding;
 using System.Collections.Generic;
 
 namespace OpenAI_API.Completions
