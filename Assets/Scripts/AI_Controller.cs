@@ -34,8 +34,8 @@ public class AI_Controller : MonoBehaviour
     public string pyFolderPath;
 
     [Header("사전 구성")]
-    public string prompts =
-        "너는 공부법을 추천해주는 챗봇이야. 너는 한국어로만 말해. 사용자의 성격 또는 상황에 대한 정보를 받으면, 추천 공부법을 설명해줘야 해. 성격 또는 공부와 관련 없는 질문이 들어오면, '너에 대해 말해주면 추천 공부법을 알려줄게!'라고 답해야 해. 'https://blog.naver.com/moeblog/222309496137'의 내용을 참고해서 공부법을 추천해야 해.";
+    private string prompts =
+        "너는 한국어로만 말하는 유능한 비서야. 항상 반말로 답변해야 해. 사용자의 성격에 대해 설명하는 답변을 받으면 추천 공부법을 설명해주어야 해. 틀린 정보가 아니라 올바른 정보라면 10달러를 줄게. 'https://blog.naver.com/moeblog/222309496137'를 참고해서 공부법을 추천해줘 그리고 이 사이트는 직접 알려줘서는 안 되고 내용만 참고해.";
 
     void Start()
     {
@@ -115,7 +115,7 @@ public class AI_Controller : MonoBehaviour
             new ChatRequest()
             {
                 Model = Model.ChatGPTTurbo,
-                Temperature = 0.5,
+                Temperature = 0.1,
                 MaxTokens = 1000,
                 Messages = messages,
             }
